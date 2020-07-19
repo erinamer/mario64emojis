@@ -1,0 +1,74 @@
+@font-face {
+    font-family: marioTitle;
+    src: url(SuperMario256.ttf);
+  }
+@font-face {
+    font-family: marioText;
+    src: url(SuperMarioDsRegular-Ea4R8.ttf);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffbaba;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#main_box {
+    display: inline-block;
+    background-color: rgb(159, 245, 255);
+    width: 55%;
+    height: 600px;
+    margin: auto;
+    padding: 20px 20px 70px 20px;
+    border-radius: 20px;
+    border: 5px solid rgb(113, 134, 255);
+}
+
+h1 {
+    font-family: marioTitle, sans-serif;
+    text-align: center;
+    font-size: 40pt;
+    color: #ffed64;
+    -webkit-text-stroke: 5px rgb(223, 0, 4);
+}
+
+#mario {
+    margin: 0 auto;
+    width: 70%;
+    height: 100px;
+}
+
+#mario_text {
+    width: 100%;
+    height: 200px;
+    font-size: 14pt;
+    padding: 20px;
+    border-radius: 20px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+#mario_button {
+    text-align: left;
+}
+
+#copy_button {
+    text-align: right;
+    margin: 0;
+}
+
+#result_box {
+    overflow-y: auto;
+    color:rgb(20, 0, 87);
+    font-family: marioText, sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    width: 90%;
+    margin-top: 100pt;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    overflow: auto;
+}

@@ -1,1 +1,25 @@
-hello world
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>mario 64</title>
+    <link rel="stylesheet" type="text/css" href="mario.css">
+    <script src="mario.js"></script>
+</head>
+
+<body>
+    <div id="main_box">
+        <h1>mario. i know him</h1>
+
+        <div id="mario">
+            <textarea id="mario_text" autofocus="true" form="mario" maxlength="10000" wrap="hard" onkeypress="enterHandler(event)"></textarea>
+            <button id="mario_button" onclick="marioHandler()">Wahoo!</button>
+            <button id="mario_copy" onclick="copyHandler()">Copy Result</button>
+        </div>
+
+        <div id="result_box">
+                <p id="mario_result"></p>
+        </div>
+    </div>
+</body>
+</html>
