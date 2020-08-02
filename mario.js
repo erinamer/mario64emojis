@@ -12,9 +12,9 @@ function marioHandler() {
 
         // if current char is a letter, turn it into the emoji
         if (currentChar.match(letters))
-            newText += ":" + currentChar + "mario: ";
+            newText += ":" + currentChar + "mario:";
         else if (currentChar === " ")
-            newText += "&nbsp ";
+            newText += " ";
         else
             newText += currentChar; // leave punctuation alone
     }
@@ -37,7 +37,7 @@ function copyHandler() {
 function enterHandler(event) { 
     if (event.keyCode == 13 && !event.shiftKey) { 
         
-        //Stops enter from creating a new line 
+        // stop enter from creating a new line 
         event.preventDefault();  
         document.getElementById("mario_button").click();
     } 
